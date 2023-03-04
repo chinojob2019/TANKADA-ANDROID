@@ -1,0 +1,121 @@
+<resources>
+    <string name="app_name">SedapalApp</string>
+    <string name="message_loading">Cargando</string>
+
+    <!--LoginActivity-->
+    <string name="user">Usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="login">Iniciar</string>
+    <string name="recover_password">Olvidé mi contraseña</string>
+    <string name="input_user">Ingrese usuario</string>
+    <string name="input_password">Ingrese contraseña</string>
+
+    <string name="password_description">Enviaremos la reposición de tu contraseña al correo vinculado a tu usuario.</string>
+
+    <string name="register">Registrar</string>
+    <string name="date">Fecha</string>
+    <string name="time">Hora</string>
+    <string name="pump">Surtidor</string>
+    <string name="m3">M³</string>
+    <string name="photo_pump">Foto del medidor</string>
+    <string name="description">Descripción</string>
+    <string name="closure_daily">Cierre Diario</string>
+    <string name="consult_activities">Consultar Movimiento</string>
+    <string name="maintenance_daily">Apertura Diaria</string>
+    <string name="event">Evento</string>
+
+    <!--RecoverPasswordActivity-->
+    <string name="help_center">Consultar Movimiento</string>
+    <string name="phone_number">3234555</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
+    <string name="dont_have_call_permission">Usted no cuenta con permiso para realizar llamadas</string>
+
+    <!--OptionMenuActivity-->
+    <string name="select_option">Elija una opción</string>
+    <string name="opening">Apertura</string>
+    <string name="home">Inicio</string>
+
+
+    <!--QueryDailyActivity-->
+    <string name="input_query">Ingresar consulta</string>
+    <string name="query_daily">Consulta diaria</string>
+
+    <!--MaintenanceSuccessfulActivity-->
+    <string name="init">Iniciar</string>
+    <string name="maintenance_succesfull">¡Apertura satisfactoria!</string>
+
+    <!--DespatchSaleActivity-->
+    <string name="despatch_sale">Despacho por\nVenta</string>
+    <string name="despatch_qr">Por código\nQR</string>
+    <string name="input_despatch_qr">Ingreso por código QR</string>
+    <string name="despatch_detail">Por detalle\nde Venta</string>
+    <string name="enter">Ingresar</string>
+    <string name="despatch_from">Despacho según</string>
+    <string name="to_enter">Ingrese</string>
+    <string name="error_conexion">Error de conexión</string>
+    <string-array name="despatch_type_array">
+        <item>Nro de Placa</item>
+        <item>Nro de Ticket</item>
+        <item>RUC</item>
+        <item>DNI</item>
+    </string-array>
+
+
+    <string name="despatch_for_each">Despacho según</string>
+
+    <!--DespatchSaleListActivity-->
+    <string name="despatch_according_to">Despacho por</string>
+
+    <!--DespatchAnfActivity-->
+    <string name="despatch_anf">Despacho por\ncontrol ANF</string>
+
+    <!--DespatchQRActivity-->
+    <string name="input_data">Ingreso de datos</string>
+
+    <!--DespatchDetailActivity-->
+    <string name="plate">Placa</string>
+    <string name="ticket">Ticket</string>
+    <string name="capacity">Capacidad</string>
+    <string name="sales_observations">Observaciones de la venta</string>
+    <string name="despatch">Despachar</string>
+    <string name="measure">Medida</string>
+
+    <!--DespatchSuccessfulActivity-->
+    <string name="back">Volver</string>
+    <string name="despatch_succesfull">¡Despacho satisfactorio!</string>
+    <string name="type_despatch">Tipo de Despacho</string>
+    <string name="title_opening">¡Apertura satisfactoria!</string>
+    <string name="title_normal">¡Despacho satisfactorio!</string>
+    <string name="title_anf">¡Despacho ANF satisfactorio!</string>
+    <string name="title_closure">¡Cierre satisfactorio!</string>
+    <string name="finish">Finalizar</string>
+
+    <!--DespatchAnfActivity-->
+    <string name="input_despatch_plate">Ingreso por Placa</string>
+
+    <!--DespatchAnfDetailActivity-->
+    <string name="select">Seleccionar</string>
+    <string name="subtitle_anf_despatch">Despacho por ANF</string>
+    <!--Buttons-->
+    <string name="accept">ACEPTAR</string>
+    <string name="cancel">CANCELAR</string>
+
+
+    <!--Messages-->
+    <string name="message_error_service">Error de conexion</string>
+    <string name="message_data_incorrect">Data incorrecta</string>
+    <string name="message_register">¿Está seguro de realizar la apertura?</string>
+    <string name="message_anf">Confirmar despacho por ANF</string>
+    <string name="message_anf_">Confirmar despacho por ANF</string>
+    <string name="message_close_sessin">Al cerrar sesión perderá las opciones elegidas</string>
+    <string name="message_on_back_data_clear">Al retroceder se perderán los datos que deseas registrar</string>
+    <string name="message_closure_daily">¿Está seguro de realizar el Cierre Diario?</string>
+    <string name="despatch_password_forgot_succesfull">¡Solicitud de contraseña enviada!</string>
+    <!--TitleMessages-->
+    <string name="title_message_are_you_sure">¿Está seguro?</string>
+
+    <string name="send">Enviar</string>
+
+    <string name="title_password_forgot">Olvidé mi contraseña</string>
+    <string name="subtitle_password_forgot">Recuperar contraseña</string>
+</resources>

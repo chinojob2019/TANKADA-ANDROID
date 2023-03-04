@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ultra_light_gray"
+    tools:context=".view.activity.OptionMenuActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/toolbarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar_buttons" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <TextView
+        android:id="@+id/tv_elija_opcion"
+        android:layout_below="@+id/toolbarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/half_constraint"
+        android:layout_marginEnd="@dimen/standard_constraint"
+        android:layout_marginStart="@dimen/standard_constraint"
+        android:layout_marginTop="@dimen/half_constraint"
+        android:text="@string/select_option"
+        android:textAppearance="@style/SubtitleBlue.Theme" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_bottom_buttons"
+        android:layout_below="@+id/tv_elija_opcion">
+
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/standard_constraint"
+
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/frameLayoutSale"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:background="@drawable/border_stroke"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:id="@+id/iv_despacho_ventas"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            app:srcCompat="@drawable/water_pump"/>
+
+                        <TextView
+                            android:id="@+id/tv_despacho_ventas"
+                            android:layout_width="wrap_content"
+                            android:gravity="center"
+                            android:layout_height="wrap_content"
+                            android:text="@string/despatch_sale"
+                            android:textAppearance="@style/TitleGray.Theme"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <View
+                    android:layout_width="8dp"
+                    android:layout_height="0dp"/>
+
+                <FrameLayout
+                    android:id="@+id/frameLayoutANF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:background="@drawable/border_stroke"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:id="@+id/iv_despacho_anf"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            app:srcCompat="@drawable/lifebuoy"/>
+
+                        <TextView
+                            android:id="@+id/tv_despacho_anf"
+                            android:layout_width="wrap_content"
+                            android:gravity="center"
+                            android:layout_height="wrap_content"
+                            android:text="@string/despatch_anf"
+                            android:textAppearance="@style/TitleGray.Theme"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height"
+            android:background="@color/light_gray"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/btn_activity_movement"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent"
+                    android:contentDescription="@null"
+
+                    android:paddingBottom="@dimen/standard_constraint"
+                    app:srcCompat="@drawable/icon_movimientos" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom|center_horizontal"
+                    android:paddingBottom="@dimen/half_constraint"
+                    android:text="@string/consult_activities"
+                    android:textAppearance="@style/DescriptionTitleGray.Theme" />
+
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="@dimen/line_height"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/standard_constraint"
+                android:layout_marginTop="@dimen/standard_constraint"
+                android:background="@color/light_gray" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/btn_closure_day"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent"
+                    android:contentDescription="@null"
+                    android:paddingBottom="@dimen/standard_constraint"
+                    app:srcCompat="@drawable/icon_cierre" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom|center_horizontal"
+                    android:paddingBottom="@dimen/half_constraint"
+                    android:text="@string/closure_daily"
+                    android:textAppearance="@style/DescriptionTitleGray.Theme" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

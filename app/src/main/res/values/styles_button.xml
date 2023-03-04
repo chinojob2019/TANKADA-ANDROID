@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TransparentButton.Theme" parent="Widget.AppCompat.Button">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:buttonStyle">@style/TextWhite.Theme</item>
+        <item name="android:background">@color/transparent</item>
+    </style>
+
+    <style name="LigthBlueButton.Theme" parent="Widget.AppCompat.Button">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:buttonStyle">@style/BtnText.Theme</item>
+        <item name="android:background">@drawable/button_border_light_blue</item>
+    </style>
+
+    <style name="BlueButton.Theme" parent="Widget.AppCompat.Button">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:buttonStyle">@style/BtnText.Theme</item>
+        <item name="android:background">@drawable/button_border_blue</item>
+    </style>
+
+    <style name="GrayButton.Theme" parent="Widget.AppCompat.Button">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:buttonStyle">@style/BtnText.Theme</item>
+        <item name="android:background">@drawable/button_border_gray</item>
+    </style>
+</resources>

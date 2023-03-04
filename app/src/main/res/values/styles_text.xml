@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TitleWhite.Theme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_simple_size</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="colorControlActivated">@color/white</item>
+        <item name="colorControlNormal">@color/white</item>
+    </style>
+
+    <style name="TextWhite.Theme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_title_size</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="colorControlActivated">@color/white</item>
+        <item name="colorControlNormal">@color/white</item>
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="colorControlHighlight">@color/white</item>
+    </style>
+
+    <style name="TextBlue.Theme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColor">@color/dark_blue</item>
+        <item name="android:textSize">@dimen/text_simple_size</item>
+        <item name="android:textColorHint">@color/dark_blue</item>
+        <item name="colorControlActivated">@color/dark_blue</item>
+        <item name="colorControlNormal">@color/dark_blue</item>
+        <item name="android:backgroundTint">@color/light_gray</item>
+    </style>
+
+    <style name="TitleBlue.Theme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColor">@color/dark_blue</item>
+        <item name="android:textSize">@dimen/text_title_size</item>
+        <item name="android:textColorHint">@color/dark_blue</item>
+        <item name="colorControlActivated">@color/dark_blue</item>
+        <item name="colorControlNormal">@color/dark_blue</item>
+        <item name="android:backgroundTint">@color/light_gray</item>
+    </style>
+
+    <style name="SubtitleWhite.Theme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_subtitle_size</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="colorControlActivated">@color/white</item>
+        <item name="colorControlNormal">@color/white</item>
+    </style>
+
+    <style name="SubtitleBlue.Theme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColor">@color/dark_blue</item>
+        <item name="android:textSize">@dimen/text_subtitle_size</item>
+        <item name="android:textColorHint">@color/dark_blue</item>
+        <item name="colorControlActivated">@color/dark_blue</item>
+        <item name="colorControlNormal">@color/dark_blue</item>
+    </style>
+
+    <style name="SubtitleLightBlue.Theme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColor">@color/light_blue</item>
+        <item name="android:textSize">@dimen/text_subtitle_size</item>
+        <item name="android:textColorHint">@color/light_blue</item>
+        <item name="colorControlActivated">@color/light_blue</item>
+        <item name="colorControlNormal">@color/light_blue</item>
+    </style>
+
+    <style name="TitleBlueSP1.Theme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColor">@color/dark_blue</item>
+        <item name="android:textSize">@dimen/text_title_sp1_size</item>
+        <item name="android:textColorHint">@color/dark_blue</item>
+        <item name="colorControlActivated">@color/dark_blue</item>
+        <item name="colorControlNormal">@color/dark_blue</item>
+    </style>
+
+    <style name="TitleLightBlueSP2.Theme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColor">@color/light_blue</item>
+        <item name="android:textSize">@dimen/text_title_sp2_size</item>
+        <item name="android:textColorHint">@color/light_blue</item>
+        <item name="colorControlActivated">@color/light_blue</item>
+        <item name="colorControlNormal">@color/light_blue</item>
+    </style>
+
+    <style name="TitleLightGraySP2.Theme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">@dimen/text_title_sp2_size</item>
+        <item name="android:textColorHint">@color/gray</item>
+        <item name="colorControlActivated">@color/gray</item>
+        <item name="colorControlNormal">@color/gray</item>
+    </style>
+
+    <style name="DescriptionTitleGray.Theme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">@dimen/text_description_size</item>
+        <item name="android:textColorHint">@color/gray</item>
+        <item name="colorControlActivated">@color/gray</item>
+        <item name="colorControlNormal">@color/gray</item>
+    </style>
+
+    <style name="DescriptionTitleBlue.Theme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColor">@color/light_blue</item>
+        <item name="android:textSize">@dimen/text_description_size</item>
+        <item name="android:textColorHint">@color/light_blue</item>
+        <item name="colorControlActivated">@color/light_blue</item>
+        <item name="colorControlNormal">@color/light_blue</item>
+    </style>
+
+    <style name="TitleGray.Theme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">@dimen/text_simple_size</item>
+        <item name="android:textColorHint">@color/gray</item>
+        <item name="colorControlActivated">@color/gray</item>
+        <item name="colorControlNormal">@color/gray</item>
+    </style>
+
+    <style name="BtnText.Theme" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_title_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAlert.Theme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColor">@color/gray_alert</item>
+        <item name="android:textSize">@dimen/text_title_size</item>
+        <item name="android:textColorHint">@color/gray_alert</item>
+        <item name="colorControlActivated">@color/gray_alert</item>
+        <item name="colorControlNormal">@color/gray_alert</item>
+    </style>
+</resources>

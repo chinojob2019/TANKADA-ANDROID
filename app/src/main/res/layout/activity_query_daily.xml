@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.QueryDailyActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/toolbarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar_buttons" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbarLayout"
+        android:background="@color/ultra_light_gray"
+        android:gravity="center_vertical|center_horizontal|center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/half_constraint"
+            android:layout_marginEnd="@dimen/standard_constraint"
+            android:layout_marginStart="@dimen/standard_constraint"
+            android:layout_marginTop="@dimen/half_constraint"
+            android:text="@string/input_query"
+            android:textAppearance="@style/SubtitleBlue.Theme" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height"
+            android:background="@color/light_gray"
+            android:orientation="horizontal">
+
+        </View>
+    </LinearLayout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayoutBottom"
+        android:layout_below="@+id/linearLayout3">
+
+        <LinearLayout
+            android:id="@+id/linearLayout9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/half_constraint"
+                app:cardCornerRadius="@dimen/button_radius"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/half_constraint"
+                        android:orientation="vertical"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/pump"
+                            android:textAppearance="@style/DescriptionTitleGray.Theme" />
+
+                        <TextView
+                            android:id="@+id/txtSurtidor"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/constraint_bottom"
+                            tools:text="LABARTHE"
+                            android:textAppearance="@style/TitleBlue.Theme" />
+
+                        <RelativeLayout
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent"
+                            android:id="@+id/fecha_content">
+
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/transparent"
+                                android:onClick="onClickDate" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/date"
+                                    android:textAppearance="@style/DescriptionTitleGray.Theme" />
+
+                                <EditText
+                                    android:id="@+id/txtDate"
+                                    style="@style/TitleBlue.Theme"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="-5dp"
+                                    android:textAlignment="center"
+                                    android:clickable="false"
+                                    android:cursorVisible="false"
+                                    android:ems="10"
+                                    android:focusable="false"
+                                    android:drawableStart="@drawable/calendar_today"
+                                    android:drawableEnd="@drawable/menu_down"
+                                    android:focusableInTouchMode="false"
+                                    android:hint="@null"
+                                    android:inputType="numberDecimal"
+                                    tools:text="13/04/2018" />
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutBottom"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height"
+            android:background="@color/light_gray"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/imageButton2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent"
+                    android:contentDescription="@null"
+                    android:paddingBottom="16dp"
+
+                    app:srcCompat="@drawable/icon_movimientos_blue" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom|center_horizontal"
+                    android:paddingBottom="8dp"
+                    android:text="@string/consult_activities"
+                    android:textAppearance="@style/DescriptionTitleBlue.Theme" />
+
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="@dimen/line_height"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/standard_constraint"
+                android:layout_marginTop="@dimen/standard_constraint"
+                android:background="@color/light_gray" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/imageButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent"
+                    android:contentDescription="@null"
+                    android:onClick="onClickCloseSession"
+                    android:paddingBottom="16dp"
+                    app:srcCompat="@drawable/icon_cierre" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom|center_horizontal"
+                    android:paddingBottom="8dp"
+                    android:text="@string/closure_daily"
+                    android:textAppearance="@style/DescriptionTitleGray.Theme" />
+            </FrameLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

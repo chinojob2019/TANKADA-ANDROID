@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ultra_light_gray"
+    tools:context=".view.activity.DespatchSaleSuccessfulActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearLayoutBottom"
+        android:background="@color/ultra_light_gray">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/constraint_sp1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/standard_constraint"
+                android:contentDescription="@null"
+                app:srcCompat="@drawable/group_2" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/standard_constraint"
+                    app:cardCornerRadius="@dimen/button_radius"
+                    app:cardElevation="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:layout_gravity="bottom"
+                            android:background="@color/white"
+                            android:orientation="horizontal">
+
+                        </View>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txtMessage"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/standard_constraint"
+                                tools:text="@string/despatch_succesfull"
+                                android:textAlignment="center"
+                                android:textAppearance="@style/TitleLightGraySP2.Theme" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/standard_constraint"
+                            android:background="@drawable/border_stroke"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/linealLayoutDate"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/standard_constraint"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/date"
+                                        android:textAppearance="@style/TitleGray.Theme" />
+
+                                    <TextView
+                                        android:id="@+id/txtDate"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="end"
+
+                                        android:textAppearance="@style/TitleBlue.Theme" />
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/line_height"
+                                    android:background="@color/light_gray"
+                                    android:orientation="horizontal"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linealLayoutTime"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/standard_constraint"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/time"
+                                        android:textAppearance="@style/TitleGray.Theme" />
+
+                                    <TextView
+                                        android:id="@+id/txtTime"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="end"
+                                        android:textAppearance="@style/TitleBlue.Theme" />
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/line_height"
+                                    android:background="@color/light_gray"
+                                    android:orientation="horizontal"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linealLayoutSurtidor"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/standard_constraint"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/pump"
+                                        android:textAppearance="@style/TitleGray.Theme" />
+
+                                    <TextView
+                                        android:id="@+id/txtSurtidor"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="end"
+                                        android:textAppearance="@style/TitleBlue.Theme" />
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/line_height"
+                                    android:background="@color/light_gray"
+                                    android:orientation="horizontal"></View>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linealLayoutEvent"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/standard_constraint"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/event"
+                                        android:textAppearance="@style/TitleGray.Theme" />
+
+                                    <TextView
+                                        android:id="@+id/txtEvent"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="end"
+
+                                        android:textAppearance="@style/TitleBlue.Theme" />
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/line_height"
+                                    android:background="@color/light_gray"
+                                    android:orientation="horizontal"></View>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linealLayoutTypeDespatch"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/standard_constraint"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Tipo de despacho"
+                                        android:textAppearance="@style/TitleGray.Theme" />
+
+                                    <TextView
+                                        android:id="@+id/txtTypeDespatch"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="end"
+
+                                        android:textAppearance="@style/TitleBlue.Theme" />
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/line_height"
+                                    android:background="@color/light_gray"
+                                    android:orientation="horizontal"></View>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linealLayoutPlate"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/standard_constraint"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/plate"
+                                        android:textAppearance="@style/TitleGray.Theme" />
+
+                                    <TextView
+                                        android:id="@+id/txtPlate"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="end"
+
+                                        android:textAppearance="@style/TitleBlue.Theme" />
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/line_height"
+                                    android:background="@color/light_gray"
+                                    android:orientation="horizontal"></View>
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:id="@+id/linealLayoutDocument"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/standard_constraint"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/ticket"
+                                        android:textAppearance="@style/TitleGray.Theme" />
+
+                                    <TextView
+                                        android:id="@+id/txtTicket"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="end"
+
+                                        android:textAppearance="@style/TitleBlue.Theme" />
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/line_height"
+                                    android:background="@color/light_gray"
+                                    android:orientation="horizontal"></View>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linealLayoutCapacity"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/standard_constraint"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/capacity"
+                                        android:textAppearance="@style/TitleGray.Theme" />
+
+                                    <TextView
+                                        android:id="@+id/txtCapacity"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="end"
+
+                                        android:textAppearance="@style/TitleBlue.Theme" />
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/line_height"
+                                    android:background="@color/light_gray"
+                                    android:orientation="horizontal"></View>
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:id="@+id/linealLayoutMeasure"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/standard_constraint"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Capacidad"
+                                    android:textAppearance="@style/TitleGray.Theme" />
+
+                                <TextView
+                                    android:id="@+id/txtMeasure"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="end"
+
+                                    android:textAppearance="@style/TitleBlue.Theme" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:contentDescription="@null"
+                    app:srcCompat="@drawable/icon_check" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/ultra_light_gray"
+        android:orientation="vertical"
+        android:padding="@dimen/standard_constraint">
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClickBack"
+            android:text="@string/back"
+            android:theme="@style/BlueButton.Theme" />
+    </LinearLayout>
+</RelativeLayout>
